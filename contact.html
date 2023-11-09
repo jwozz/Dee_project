@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dee Arts Kenya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://kit.fontawesome.com/5f4e2e6496.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+
+
+</head>
+
+<body class="myApp">
+    <div class="cage-hold">
+
+        <div class="navigation">
+            <div id="logo">
+                <a href="home.html"><img src="dededed.png" alt="dee_arts_logo"></a>
+            </div>
+            <div id="main-nav">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li class="active"><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile">
+                <div class="mainContainer">
+                    <header>
+                        <a href="#" class="menuBtn">
+                            <span class="lines"></span>
+                        </a>
+                        <nav class="mainMenu">
+                            <ul>
+                                <li>
+                                    <a href="home.html">home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">about</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">portfolio</a>
+                                </li>
+                                <li class="active">
+                                    <a href="contact.html">contact</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <div class="cage">
+            <div class="hero">
+                <div class="h-container">
+                    <div class="hero-cont">
+                        <h1>my <span>contact</span></h1>
+                        <p>I'd love to hear from you. Whether you have a question about art, pricing or anything else, I am ready to answer all your questions.</p>
+                        <p2><a href="portfolio.html">my arts <span>&rarr;</span></a></p2>
+                    </div>
+                    <div class="hero-cont">
+                        <div class="sub-cont">
+                            <h1>Write me about your project and i will reply within 24 hours.</h1>
+                        </div>
+                        <div class="contacts">
+                            <form>
+                                <div class="inputs">
+                                    <input type="text" placeholder="Your Name" required>
+                                    <input type="email" placeholder="Your Email" required>
+                                    <input type="tel" placeholder="Your Phone No." required>
+                                    <input type="text" placeholder="Your Adress" required>
+                                </div>
+                                <textarea name="message" placeholder="Project Details" rows="5" required></textarea>
+                                <button class="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="call-content">
+                <p>Lorem ipsum dolor sit amet?</p>
+                <div class="sub-inside">
+                    <P2><i class="fas fa-calendar-alt"></i> &nbsp; 31 December, 1991</P2>
+                    <P2><i class="fas fa-phone"></i> &nbsp; 0723-233-233</P2>
+                    <P2><i class="fas fa-envelope"></i> &nbsp; info@mrdee.com</P2>
+                    <P2><i class="fas fa-home"></i> &nbsp; Nairobi-Kenya</P2>
+                </div>
+                <div class="sub-inside2">
+                    <P2><i class="fab fa-facebook"></i></P2>
+                    <P2><i class="fab fa-twitter"></i></P2>
+                    <P2><i class="fab fa-instagram"></i></P2>
+                    <P2><i class="fab fa-youtube"></i></P2>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer">
+            <P><button><i class="fas fa-phone-square"></i> &nbsp; 0792-973-211</button></P>
+            <P><button><i class="fas fa-envelope-square"></i> &nbsp; info@dee.com</button></P>
+        </div>
+        <div class="footer">
+            <p>Explore art &rarr;</p>
+            <p>Mr. dee 2021</p>
+        </div>
+    </div>
+
+
+    <script src="dee.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hero-cont:nth-child(1)").animate({
+                'top': "20px"
+            }, 1500);
+        });
+        $(document).ready(function() {
+            $(".hero-cont:nth-child(2)").fadeIn(1500);
+        });
+        $(document).ready(function() {
+            $(".call-content").animate({
+                'left': "0%",
+                opacity: "show"
+            }, 1500);
+        });
+    </script>
+
+</body>
+
+</html>

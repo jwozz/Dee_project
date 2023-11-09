@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dee Arts Kenya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://kit.fontawesome.com/5f4e2e6496.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+
+
+</head>
+
+<body class="myApp">
+    <div class="cage-hold">
+
+        <div class="navigation">
+            <div id="logo">
+                <a href="home.html"><img src="dededed.png" alt="dee_arts_logo"></a>
+            </div>
+            <div id="main-nav">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li class="active"><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile">
+                <div class="mainContainer">
+                    <header>
+                        <a href="#" class="menuBtn">
+                            <span class="lines"></span>
+                        </a>
+                        <nav class="mainMenu">
+                            <ul>
+                                <li>
+                                    <a href="home.html">home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">about</a>
+                                </li>
+                                <li class="active">
+                                    <a href="portfolio.html">portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">contact</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <div class="cage">
+            <div class="hero">
+                <div class="hero-content">
+                    <div>
+                        <h1>Explore <span>My Art</span></h1>
+                        <p>As an artist, I am essentially interested in creating works that call for the participation of the audience to the same extent as my involvement in it.
+                        </p>
+                        <p2><a href="about.html">read more <span>&rarr;</span></a></p2>
+                    </div>
+                </div>
+                <div class="hero-content">
+
+                </div>
+            </div>
+
+            <div class="center">
+                <h1><span>--</span> art portfolio <span>--</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius non alias nemo exercitationem</p>
+                <div class="G-flex">
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                    <div class="animateMe" data-animation="bounceIn"></div>
+                </div>
+            </div>
+
+            <div class="sub-footer">
+                <P><button><i class="fas fa-phone-square"></i> &nbsp; 0792-973-211</button></P>
+                <P><button><i class="fas fa-envelope-square"></i> &nbsp; info@dee.com</button></P>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Explore art &rarr;</p>
+            <p>Mr. dee 2021</p>
+        </div>
+    </div>
+
+
+    <script src="dee.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hero-content:nth-child(1) div").animate({
+                'left': "0%",
+                opacity: "show"
+            }, 3000);
+        });
+        $(document).ready(function() {
+            $(".hero-content:nth-child(2)").fadeIn(3000);
+        });
+    </script>
+
+    <script>
+        function scrollWaypointInit(items, trigger) {
+            items.each(function() {
+                var element = $(this),
+                    osAnimationClass = element.data("animation"),
+                    osAnimationDelay = element.attr('data-animation-delay');
+
+                element.css({
+                    '-webkit-animation-delay': osAnimationDelay,
+                    '-moz-animation-delay': osAnimationDelay,
+                    'animation-delay': osAnimationDelay
+                });
+
+                var trigger = (trigger) ? trigger : element;
+
+                trigger.waypoint(function() {
+                    element.addClass('animated').addClass(osAnimationClass);
+                }, {
+                    // triggerOnce: true,
+                    offset: '80%'
+                });
+            });
+        }
+
+        //Call the init
+
+        $(document).ready(function() {
+
+            scrollWaypointInit($('.animateMe'));
+
+        });
+    </script>
+
+</body>
+
+</html>
